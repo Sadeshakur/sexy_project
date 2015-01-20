@@ -1,0 +1,45 @@
+<h4>What's on your mind?</h4>
+    <form method="post" action="/show_deck">
+      <p>
+        <label>Love
+            <small><input type="radio" name="love" value="love"></small>
+          </label>
+          <label>Family
+            <small><input type="radio" name="family" value="family"></small>
+          </label>
+          <label>Advice
+            <small><input type="radio" name="advice" value="advice"></small>
+          </label>
+          <label>Dreams
+            <small><input type="radio" name="dreams" value="dreams"></small>
+          </label>
+          <label>Current
+            <small><input type="radio" name="current" value="current"></small>
+          </label>
+          <label>Random
+            <small><input type="radio" name="random" value="random"></small>
+          </label>
+      </p>
+      <p>
+           <select name="result_types">
+               <option value="questions">Ask</option>
+               <option value="who">Who</option>
+               <option value="what">What</option>
+               <option value="where">Where</option>
+               <option value="why">When</option>
+               <option value="why">Why</option>
+               <option value="how">How</option>
+            <input type="select" name="question" placeholder="write your questions here">
+      <p>
+        <label>Photo
+          <input type="text" name="photo_url" placeholder="add a photo url">
+        </label>
+          <input type="submit" name="post">
+        </p>
+     </form>
+
+
+<h4>Pick a Card</h4>
+  <img src="<% @questions[photo_url] %>" /a>
+  <%= @questions["question:#{id}"] %>
+

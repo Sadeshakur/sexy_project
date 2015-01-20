@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <title>Flipdeck</title>
+
+  <link href="/stylesheets/normalize.css" rel="stylesheet" type="text/css" media="all">
+  <link href="/stylesheets/style.css" rel="stylesheet" type="text/css" media="all">
+</head>
+<body>
+  <% if session["user_info"] %>
+    <h3>Hey <%= session["user_info"]["first_name"] %>,</h1>
+    <div class="nav">
+    <h3>Welcome to Flipdeck</h1>
+     <div class="nav">
+      <p>
+       <ul>
+        <li><a href="/myprofile">My Profile</a></li>
+        <li><a href="/newsfeed">Home</a></li>
+        <li><a href="/cards">My Cards</a></li>
+       </ul>
+      </div>
+    </p>
+      <%= yield %>
+  <% else %>
+    <h1>Welcome to <span class="red">F</span><span class="red">L</span><span class="goldenrod">I</span><span class="red">P</span><span class="goldenrod">D</span><span class="red">E</span><span class="goldenrod">C</span><span class="red">K</span></h1>
+    <h3><a href="<%= @facebook_auth_dialog_url %>">Login with Facebook</a></h3>
+    <h3><a href="/signup">Sign up</h3>
+    <p><img src="http://i.imgur.com/BQrRG5p.jpg"/a></p>
+  <% end %>
+</body>
+</html>

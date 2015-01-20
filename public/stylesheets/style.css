@@ -1,0 +1,42 @@
+@font-face {
+    font-family: 'Billabong';
+    src: url('../fonts/billabong-webfont.eot');
+    src: url('../fonts/billabong-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/billabong-webfont.svg#billabongregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html {
+  background-color: aqua;
+}
+
+body {
+  background color: black;
+  font color: white;
+  font-family: 'Source Sans Pro', sans-serif;
+  text-align: center;
+  margin: 0 auto;
+}
+
+div .nav {
+  text-align: center;
+    width: 1200px;
+  margin-top: 0;
+  margin: 0 auto;
+  font color: white;
+  background: #black;
+}
+
+div .nav ul {
+  display: inline-block;
+  vertical-align: baseline;
+}
+div .nav li {
+  display: inline-block;
+  list-style: none;
+
+input {
+  display: block;
+  font-weight: normal;
+}

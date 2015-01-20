@@ -1,0 +1,10 @@
+
+<div class="deck">
+  <ul>
+    <% @decks.each do |deck| %>
+      <li><%= deck["photo_url"] %></li>
+      <li><img src="<%= deck["question"] %>" /></li>
+      <% end %>
+      <li>&hearts;</li>
+  </ul>
+</div>
